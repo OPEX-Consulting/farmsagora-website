@@ -95,7 +95,7 @@ export default function Home() {
                     </ButtonLink>
                   </div>
 
-                  <dl className="mt-10 grid grid-cols-3 gap-6">
+                  <dl className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="rounded-2xl border border-zinc-200 bg-white/70 p-4 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/40">
                       <dt className="text-xs text-zinc-600 dark:text-zinc-400">
                         Farmer-first rollout
