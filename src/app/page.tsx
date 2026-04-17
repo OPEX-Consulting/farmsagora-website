@@ -222,7 +222,7 @@ export default function Home() {
                   },
                   {
                     name: "Ohuru DioPalm",
-                    src: "/assets/partners/ohuru-diopalm.png",
+                    src: "/assets/partners/ohuru-diopalm.webp",
                     alt: "Ohuru DioPalm",
                   },
                   {
