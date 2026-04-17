@@ -457,24 +457,45 @@ export default function Home() {
                 <div className="grid gap-8 md:grid-cols-12 md:items-center">
                   <div className="md:col-span-7">
                     <h2 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl">
-                      Ready to partner with FarmsAgora?
+                      Contact us
                     </h2>
-                    <p className="mt-3 text-sm leading-6 text-emerald-900/80 dark:text-emerald-100/80">
-                      Tell us your program goals, geographies, and reporting
-                      needs. We’ll share a rollout plan and a demo tailored to
-                      your partner ecosystem.
-                    </p>
+                    <div className="mt-4 grid gap-6 sm:grid-cols-2">
+                      <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-emerald-200 dark:bg-zinc-950/40 dark:ring-emerald-900">
+                        <p className="text-sm font-semibold text-emerald-950 dark:text-emerald-50">
+                          Email
+                        </p>
+                        <p className="mt-1 text-sm text-emerald-900/80 dark:text-emerald-100/80">
+                          Our friendly team is here to help.
+                        </p>
+                        <p className="mt-3 text-sm font-medium text-emerald-950 dark:text-emerald-50">
+                          info@farmsagora.com
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-emerald-200 dark:bg-zinc-950/40 dark:ring-emerald-900">
+                        <p className="text-sm font-semibold text-emerald-950 dark:text-emerald-50">
+                          Office
+                        </p>
+                        <p className="mt-1 text-sm text-emerald-900/80 dark:text-emerald-100/80">
+                          Come say hello at our office HQ.
+                        </p>
+                        <p className="mt-3 text-sm font-medium leading-6 text-emerald-950 dark:text-emerald-50">
+                          7 Ibeju Lekki Street, Dolphin Estate, Ikoyi Lagos
+                          101283, Nigeria.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div className="md:col-span-5">
                     <div className="grid gap-3">
                       <a
                         className="inline-flex items-center justify-center rounded-full bg-[#1B7B44] px-5 py-3 text-sm font-medium text-white hover:bg-[#16643A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B7B44] focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-50 dark:focus-visible:ring-offset-emerald-950/20"
-                        href="mailto:partnerships@farmsagora.com?subject=Partnership%20inquiry"
+                        href="mailto:info@farmsagora.com?subject=Inquiry"
                       >
-                        Email partnerships@farmsagora.com
+                        Email info@farmsagora.com
                       </a>
                       <p className="text-center text-xs text-emerald-900/70 dark:text-emerald-100/70">
-                        Replace with your real email, phone, and address.
+                        We typically respond within 1–2 business days.
                       </p>
                     </div>
                   </div>
