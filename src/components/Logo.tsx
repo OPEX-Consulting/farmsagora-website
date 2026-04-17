@@ -12,7 +12,7 @@ export function Logo({ className = "" }: { className?: string }) {
         priority
       /> */}
       <Image
-        src="/assets/FAfulllogo.png"
+        src="/assets/FALogoFull.png"
         alt="FarmsAgora"
         width={200}
         height={70}
