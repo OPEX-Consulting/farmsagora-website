@@ -212,16 +212,23 @@ export default function Home() {
                 {[
                   {
                     name: "Opex Consulting",
-                    src: "/assets/partners/opex-consulting.png",
+                    src: "/assets/partners/opex.webp",
+                    alt: "Opex Consulting",
                   },
-                  { name: "Placom", src: "/assets/partners/placom.png" },
+                  {
+                    name: "Placom",
+                    src: "/assets/partners/placom.png",
+                    alt: "Placom",
+                  },
                   {
                     name: "Ohuru DioPalm",
                     src: "/assets/partners/ohuru-diopalm.png",
+                    alt: "Ohuru DioPalm",
                   },
                   {
                     name: "PlateauAgric",
                     src: "/assets/partners/plateauagric.png",
+                    alt: "PlateauAgric",
                   },
                 ].map((p) => (
                   <div

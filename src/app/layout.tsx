@@ -14,11 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "FarmsAgora | Profitable Agriculture For All",
+    default: "FarmsAgora | Empowering Agrotech businesses to move 3× faster.",
     template: "%s | FarmsAgora",
   },
-  description:
-    "FarmsAgora — Profitable Agriculture For All. Buy and sell, connect with farmers, and discover warehouses and storage facilities.",
+  description: "FarmsAgora — Empowering Agrotech businesses to move 3× faster.",
   applicationName: "FarmsAgora",
   keywords: [
     "Agrotech",
@@ -28,6 +27,19 @@ export const metadata: Metadata = {
     "Supply chain",
     "Climate-smart agriculture",
     "Partners",
+    "ERP implementation",
+    "Farmer onboarding",
+    "Field activity",
+    "Good agricultural practices",
+    "Offline-first flows",
+    "Reporting",
+    "Audits",
+    "Adoption",
+    "Training",
+    "Verified farm activity",
+    "Clear metrics",
+    "Reporting",
+    "Audits",
   ],
   openGraph: {
     title: "FarmsAgora | Profitable Agriculture For All",
