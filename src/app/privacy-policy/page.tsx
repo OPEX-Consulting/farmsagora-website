@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Container } from "@/components/Container";
+import { Logo } from "@/components/Logo";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -117,6 +121,43 @@ const sections: Section[] = [
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-full bg-white text-zinc-950">
+      <header className="border-b border-zinc-200/60 bg-white/70 backdrop-blur">
+        <Container className="flex h-16 items-center justify-between">
+          <Link
+            href="/"
+            className="rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B7B44]"
+          >
+            <Logo />
+            <span className="sr-only">Home</span>
+          </Link>
+
+          <nav className="hidden items-center gap-6 text-sm text-zinc-700 md:flex">
+            <Link className="hover:text-zinc-950" href="/#partners">
+              Partners
+            </Link>
+            <Link className="hover:text-zinc-950" href="/#solutions">
+              Solutions
+            </Link>
+            <Link className="hover:text-zinc-950" href="/#impact">
+              Impact
+            </Link>
+            <Link className="hover:text-zinc-950" href="/#about">
+              About
+            </Link>
+            <Link className="hover:text-zinc-950" href="/#contact">
+              Contact
+            </Link>
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <ButtonLink variant="secondary" href="/#partners" className="hidden sm:inline-flex">
+              Explore partners
+            </ButtonLink>
+            <ButtonLink href="/#contact">Talk to us</ButtonLink>
+          </div>
+        </Container>
+      </header>
+
       <div className="mx-auto w-full max-w-4xl px-4 py-12 sm:px-6">
         <h1 className="text-3xl font-semibold tracking-tight">
           FarmsAgora Limited Privacy Policy
