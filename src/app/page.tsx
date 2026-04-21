@@ -220,14 +220,14 @@ export default function Home() {
                 ].map((p) => (
                   <div
                     key={p.name}
-                    className="flex h-16 items-center justify-center rounded-2xl bg-white px-4 ring-1 ring-zinc-200"
+                    className="flex h-18 items-center justify-center rounded-2xl px-4 "
                   >
                     <Image
                       src={p.src}
                       alt={p.name}
-                      width={220}
-                      height={56}
-                      className="max-h-10 w-auto max-w-full object-contain"
+                      width={240}
+                      height={86}
+                      className="h-18 w-auto max-w-full object-contain"
                     />
                   </div>
                 ))}
@@ -520,6 +520,9 @@ export default function Home() {
                   <a className="hover:text-zinc-950" href="#contact">
                     Contact
                   </a>
+                  <Link className="hover:text-zinc-950" href="/privacy-policy">
+                    Privacy Policy
+                  </Link>
                 </div>
 
                 <div className="flex items-center gap-3 text-zinc-600">
