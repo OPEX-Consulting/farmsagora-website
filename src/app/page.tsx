@@ -499,19 +499,51 @@ export default function Home() {
           <Container>
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <Logo />
-              <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-700">
-                <a className="hover:text-zinc-950" href="#partners">
-                  Partners
-                </a>
-                <a className="hover:text-zinc-950" href="#solutions">
-                  Solutions
-                </a>
-                <a className="hover:text-zinc-950" href="#impact">
-                  Impact
-                </a>
-                <a className="hover:text-zinc-950" href="#contact">
-                  Contact
-                </a>
+              <div className="flex flex-col gap-4 md:items-end">
+                <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-700">
+                  <a className="hover:text-zinc-950" href="#partners">
+                    Partners
+                  </a>
+                  <a className="hover:text-zinc-950" href="#solutions">
+                    Solutions
+                  </a>
+                  <a className="hover:text-zinc-950" href="#impact">
+                    Impact
+                  </a>
+                  <a className="hover:text-zinc-950" href="#contact">
+                    Contact
+                  </a>
+                </div>
+
+                <div className="flex items-center gap-3 text-zinc-600">
+                  <span className="text-xs font-medium text-zinc-600">
+                    Follow us
+                  </span>
+                  <SocialIcon
+                    label="Instagram"
+                    href="https://instagram.com/farms.agora?igshid=NTc4MTIwNjQ2YQ=="
+                  >
+                    <InstagramIcon />
+                  </SocialIcon>
+                  <SocialIcon
+                    label="LinkedIn"
+                    href="https://www.linkedin.com/company/farmsagora/"
+                  >
+                    <LinkedInIcon />
+                  </SocialIcon>
+                  <SocialIcon
+                    label="Facebook"
+                    href="https://www.facebook.com/profile.php?id=100093462253898&mibextid=ZbWKwL"
+                  >
+                    <FacebookIcon />
+                  </SocialIcon>
+                  <SocialIcon
+                    label="Twitter"
+                    href="https://twitter.com/FarmsAgora?t=CMN13RzcQeh6t3g1hagt3g&s=09"
+                  >
+                    <TwitterIcon />
+                  </SocialIcon>
+                </div>
               </div>
             </div>
             <div className="mt-8 flex flex-col gap-2 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
@@ -590,5 +622,63 @@ function Quote({ quote, by }: { quote: string; by: string }) {
         {by}
       </figcaption>
     </figure>
+  );
+}
+
+function SocialIcon({
+  label,
+  href,
+  children,
+}: {
+  label: string;
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-zinc-200 transition-colors hover:bg-zinc-50 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B7B44]"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      title={label}
+    >
+      <span className="h-4 w-4">{children}</span>
+    </a>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Z" />
+      <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+      <path d="M17.6 6.4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6.5 6.5A1.9 1.9 0 1 1 6.5 2.7a1.9 1.9 0 0 1 0 3.8ZM3.9 8.2H9V21H3.9V8.2Z" />
+      <path d="M11 8.2h4.9v1.8h.1c.7-1.2 2.3-2.1 4.2-2.1 4.5 0 5.3 2.9 5.3 6.6V21H20.4v-5.7c0-1.4 0-3.2-2.1-3.2-2.1 0-2.4 1.5-2.4 3.1V21H11V8.2Z" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6H16.7V4.8c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8V11H6.5v3h2.7v8h4.3Z" />
+    </svg>
+  );
+}
+
+function TwitterIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.9 2H22l-6.8 7.8L23.5 22h-6.6l-5.2-6.8L5.8 22H2.5l7.3-8.4L.6 2h6.8l4.7 6.2L18.9 2Zm-1.2 18h1.9L6.4 3.9H4.3L17.7 20Z" />
+    </svg>
   );
 }
