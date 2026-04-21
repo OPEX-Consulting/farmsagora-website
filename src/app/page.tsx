@@ -104,6 +104,9 @@ export default function Home() {
                       <dd className="mt-1 text-lg font-semibold">
                         Open integrations
                       </dd>
+                      <dd className="mt-1 text-lg font-semibold">
+                        We facilitate commodity trading within the country.
+                      </dd>
                     </div>
                   </dl>
                 </div>
@@ -459,6 +462,9 @@ export default function Home() {
                         </p>
                         <p className="mt-3 text-sm font-medium text-emerald-950">
                           info@farmsagora.com
+                        </p>
+                        <p className="mt-3 text-sm font-medium text-emerald-950">
+                          +234 813 722 6474
                         </p>
                       </div>
 
