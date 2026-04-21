@@ -469,7 +469,8 @@ I’m genuinely impressed with the level of thought and execution that has gone 
                           info@farmsagora.com
                         </p>
                         <p className="mt-3 text-sm font-medium text-emerald-950">
-                          +234 813 722 6474
+                          <p>+234 813 722 6474</p>
+                          <p>+234 810 284 5862</p>
                         </p>
                       </div>
 
