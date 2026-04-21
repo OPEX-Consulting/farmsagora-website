@@ -252,8 +252,8 @@ export default function Home() {
 
           <section id="solutions" className="py-16">
             <Container>
-              <div className="grid gap-10 md:grid-cols-12 md:items-start">
-                <div className="md:col-span-5">
+              <div className="">
+                <div className="mb-5">
                   <h2 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl">
                     What FarmsAgora delivers
                   </h2>
@@ -262,37 +262,36 @@ export default function Home() {
                     across your operations.
                   </p>
                 </div>
-                <div className="md:col-span-7">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <Feature
-                      title="ERP implementation"
-                      body="Configure core workflows (inventory, procurement, sales, finance) with the right controls and reporting."
-                    />
-                    <Feature
-                      title="Farmer onboarding & profiling"
-                      body="Capture farm IDs, plots, household details, and consent—built for scale and privacy."
-                    />
-                    <Feature
-                      title="Field activity & training"
-                      body="Record visits, inputs, and good agricultural practices with offline-first flows."
-                    />
-                    <Feature
-                      title="Traceability & lot management"
-                      body="Link harvest lots to farms and buyers with verifiable event history."
-                    />
-                    <Feature
-                      title="Dashboards & reporting"
-                      body="Partner-ready metrics for program performance, compliance, and impact storytelling."
-                    />
-                    <Feature
-                      title="Data quality signals"
-                      body="Flags for missing fields, suspicious patterns, and audit readiness checks."
-                    />
-                    <Feature
-                      title="Partner operations support"
-                      body="We help design rollout playbooks, training materials, and partner comms."
-                    />
-                  </div>
+
+                <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+                  <Feature
+                    title="ERP implementation"
+                    body="Configure core workflows (inventory, procurement, sales, finance) with the right controls and reporting."
+                  />
+                  <Feature
+                    title="Farmer onboarding & profiling"
+                    body="Capture farm IDs, plots, household details, and consent—built for scale and privacy."
+                  />
+                  <Feature
+                    title="Field activity & training"
+                    body="Record visits, inputs, and good agricultural practices with offline-first flows."
+                  />
+                  <Feature
+                    title="Traceability & lot management"
+                    body="Link harvest lots to farms and buyers with verifiable event history."
+                  />
+                  <Feature
+                    title="Dashboards & reporting"
+                    body="Partner-ready metrics for program performance, compliance, and impact storytelling."
+                  />
+                  <Feature
+                    title="Data quality signals"
+                    body="Flags for missing fields, suspicious patterns, and audit readiness checks."
+                  />
+                  <Feature
+                    title="Partner operations support"
+                    body="We help design rollout playbooks, training materials, and partner comms."
+                  />
                 </div>
               </div>
             </Container>
