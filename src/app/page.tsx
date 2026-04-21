@@ -423,17 +423,19 @@ export default function Home() {
                     <p className="text-sm font-semibold">What partners say</p>
                     <div className="mt-5 space-y-6">
                       <Quote
-                        quote="“The rollout playbook and dashboards made it easy to align implementers and leadership on the same metrics.”"
-                        by="Program Lead"
+                        quote="“The platform exceeded my expectations. From the workflows to the seamless interaction between system components, everything aligns perfectly with our project needs. It’s clear that this solution was built with a deep understanding of operational efficiency.
+What stands out most is its ability to simplify processes and save valuable time. I can already see how this will help us achieve our vision of onboarding and managing up to 1,000 farmers effectively on the platform.
+I’m genuinely impressed with the level of thought and execution that has gone into this product.”"
+                        by="— Mr. Ebere, Project Manager & CEO, Ohuru Diopalm Project"
                       />
-                      <Quote
+                      {/* <Quote
                         quote="“We finally have a reliable, auditable view of farm activity that our compliance team trusts.”"
                         by="Sourcing Manager"
                       />
                       <Quote
                         quote="“Farmers adopted it quickly because it respects their time and works offline.”"
                         by="Field Supervisor"
-                      />
+                      /> */}
                     </div>
                     {/* <p className="mt-6 text-xs text-zinc-500">
                       Testimonials are illustrative and can be replaced with
