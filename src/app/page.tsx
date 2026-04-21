@@ -24,34 +24,19 @@ export default function Home() {
             </Link>
 
             <nav className="hidden items-center gap-6 text-sm text-zinc-700 md:flex">
-              <a
-                className="hover:text-zinc-950"
-                href="#partners"
-              >
+              <a className="hover:text-zinc-950" href="#partners">
                 Partners
               </a>
-              <a
-                className="hover:text-zinc-950"
-                href="#solutions"
-              >
+              <a className="hover:text-zinc-950" href="#solutions">
                 Solutions
               </a>
-              <a
-                className="hover:text-zinc-950"
-                href="#impact"
-              >
+              <a className="hover:text-zinc-950" href="#impact">
                 Impact
               </a>
-              <a
-                className="hover:text-zinc-950"
-                href="#about"
-              >
+              <a className="hover:text-zinc-950" href="#about">
                 About
               </a>
-              <a
-                className="hover:text-zinc-950"
-                href="#contact"
-              >
+              <a className="hover:text-zinc-950" href="#contact">
                 Contact
               </a>
             </nav>
@@ -154,9 +139,7 @@ export default function Home() {
                       </div>
                       <div className="grid grid-cols-2 gap-3">
                         <div className="rounded-2xl bg-zinc-50 p-4 ring-1 ring-zinc-200">
-                          <p className="text-xs text-zinc-600">
-                            Field visits
-                          </p>
+                          <p className="text-xs text-zinc-600">Field visits</p>
                           <p className="mt-2 text-xl font-semibold">+32%</p>
                           <p className="mt-1 text-xs text-zinc-600">
                             reported on time
@@ -212,7 +195,7 @@ export default function Home() {
                 {[
                   {
                     name: "Opex Consulting",
-                    src: "/assets/partners/opex.webp",
+                    src: "/assets/partners/opex-logo.webp",
                     alt: "Opex Consulting",
                   },
                   {
@@ -517,28 +500,16 @@ export default function Home() {
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <Logo />
               <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-700">
-                <a
-                  className="hover:text-zinc-950"
-                  href="#partners"
-                >
+                <a className="hover:text-zinc-950" href="#partners">
                   Partners
                 </a>
-                <a
-                  className="hover:text-zinc-950"
-                  href="#solutions"
-                >
+                <a className="hover:text-zinc-950" href="#solutions">
                   Solutions
                 </a>
-                <a
-                  className="hover:text-zinc-950"
-                  href="#impact"
-                >
+                <a className="hover:text-zinc-950" href="#impact">
                   Impact
                 </a>
-                <a
-                  className="hover:text-zinc-950"
-                  href="#contact"
-                >
+                <a className="hover:text-zinc-950" href="#contact">
                   Contact
                 </a>
               </div>
@@ -559,9 +530,7 @@ function PartnerCard({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
       <p className="text-sm font-semibold">{title}</p>
-      <p className="mt-2 text-sm leading-6 text-zinc-700">
-        {body}
-      </p>
+      <p className="mt-2 text-sm leading-6 text-zinc-700">{body}</p>
     </div>
   );
 }
@@ -570,9 +539,7 @@ function Feature({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm">
       <p className="text-sm font-semibold">{title}</p>
-      <p className="mt-2 text-sm leading-6 text-zinc-700">
-        {body}
-      </p>
+      <p className="mt-2 text-sm leading-6 text-zinc-700">{body}</p>
     </div>
   );
 }
@@ -599,9 +566,7 @@ function UseCase({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-2xl bg-white p-4 ring-1 ring-zinc-200">
       <p className="text-sm font-semibold">{title}</p>
-      <p className="mt-1 text-sm leading-6 text-zinc-700">
-        {body}
-      </p>
+      <p className="mt-1 text-sm leading-6 text-zinc-700">{body}</p>
     </div>
   );
 }
@@ -610,9 +575,7 @@ function Pill({ title, body }: { title: string; body: string }) {
   return (
     <div className="rounded-2xl bg-zinc-50 p-4 ring-1 ring-zinc-200">
       <p className="text-sm font-semibold">{title}</p>
-      <p className="mt-1 text-sm leading-6 text-zinc-700">
-        {body}
-      </p>
+      <p className="mt-1 text-sm leading-6 text-zinc-700">{body}</p>
     </div>
   );
 }
