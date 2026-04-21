@@ -64,7 +64,8 @@ export default function Home() {
                     trust
                   </p>
                   <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-                    Empowering Agrotech businesses to move 3× faster.
+                    From farm registration to verified lot — faster. We help
+                    Agrotech teams build field systems that scale.
                   </h1>
                   <p className="mt-4 max-w-xl text-pretty text-base leading-7 text-zinc-700">
                     We help Agrotech teams build systems that streamline
@@ -434,10 +435,10 @@ export default function Home() {
                         by="Field Supervisor"
                       />
                     </div>
-                    <p className="mt-6 text-xs text-zinc-500">
+                    {/* <p className="mt-6 text-xs text-zinc-500">
                       Testimonials are illustrative and can be replaced with
                       real quotes and names.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
