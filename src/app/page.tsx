@@ -195,7 +195,7 @@ export default function Home() {
                 </ButtonLink>
               </div>
 
-              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
                 {[
                   {
                     name: "Opex Consulting",
@@ -203,7 +203,7 @@ export default function Home() {
                     alt: "Opex Consulting",
                   },
                   {
-                    name: "Placom",
+                    name: "PLACOM",
                     src: "/assets/partners/placom.png",
                     alt: "Placom",
                   },
@@ -213,22 +213,25 @@ export default function Home() {
                     alt: "Ohuru DioPalm",
                   },
                   {
-                    name: "PlateauAgric",
+                    name: "Plateau Agric",
                     src: "/assets/partners/plateauagric.png",
                     alt: "PlateauAgric",
                   },
                 ].map((p) => (
                   <div
                     key={p.name}
-                    className="flex h-18 items-center justify-center rounded-2xl px-4 "
+                    className="flex flex-col items-center justify-center rounded-2xl px-4 py-2 text-center"
                   >
                     <Image
                       src={p.src}
                       alt={p.name}
                       width={240}
                       height={86}
-                      className="h-18 w-auto max-w-full object-contain"
+                      className="h-16 w-auto max-w-full object-contain"
                     />
+                    <p className="mt-2 text-sm font-bold text-zinc-700">
+                      {p.name}
+                    </p>
                   </div>
                 ))}
               </div>
