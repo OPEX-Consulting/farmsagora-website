@@ -121,7 +121,7 @@ const sections: Section[] = [
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-full bg-white text-zinc-950">
-      <header className="border-b border-zinc-200/60 bg-white/70 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/70 backdrop-blur">
         <Container className="flex h-16 items-center justify-between">
           <Link
             href="/"

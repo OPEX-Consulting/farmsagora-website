@@ -7,13 +7,13 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 export default function Home() {
   return (
     <div className="min-h-full bg-white text-zinc-950">
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_0%,rgba(16,185,129,0.22),transparent_60%),radial-gradient(60%_40%_at_80%_20%,rgba(59,130,246,0.10),transparent_60%)]"
         />
 
-        <header className="relative border-b border-zinc-200/60 bg-white/70 backdrop-blur">
+        <header className="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/70 backdrop-blur">
           <Container className="flex h-16 items-center justify-between">
             <Link
               href="/"
@@ -469,8 +469,8 @@ I’m genuinely impressed with the level of thought and execution that has gone 
                           info@farmsagora.com
                         </p>
                         <p className="mt-3 text-sm font-medium text-emerald-950">
-                          <p>+234 813 722 6474</p>
-                          <p>+234 810 284 5862</p>
+                          <p>{"+234 813 722 6474"}</p>
+                          <p>{"+234 810 284 5862"}</p>
                         </p>
                       </div>
 
